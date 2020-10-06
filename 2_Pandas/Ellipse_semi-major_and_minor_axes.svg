@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="720px" height="440px" viewBox="-180 -110 360 220">
+<title>Semi-major and semi-minor axes of an ellipse</title>
+<g stroke="black" fill="none" stroke-width="1">
+	<ellipse cx="0" cy="0" rx="170" ry="102" stroke="black" fill="seashell"/>
+	<line x1="-172" y1="0" x2="172" y2="0" stroke-dasharray="5,3"/>
+	<line x1="0" y1="-104" x2="0" y2="104" stroke-dasharray="5,3"/>
+	<line x1="-172" y1="0" x2="0" y2="0" stroke="darkred" stroke-width="3"/>
+	<line x1="0" y1="-104" x2="0" y2="0" stroke="darkblue" stroke-width="3"/>
+	<circle id="pt" cx="0" cy="0" r="3" fill="black"/>
+	<use xlink:href="#pt" x="136"/><use xlink:href="#pt" x="-136"/>
+	<use xlink:href="#pt" x="-170"/>
+	<use xlink:href="#pt" y="-102"/>
+	<g font-family="New Century Schoolbook" font-size="18" stroke="none">
+		<text font-style="italic" fill="black">
+			<tspan x="-86" y="-8" font-size="30" fill="darkred">a</tspan>
+			<tspan x="2" y="-52" font-size="30" fill="darkblue">b</tspan>
+			<tspan x="2" y="17">C</tspan>
+			<tspan x="136" y="17">F</tspan><tspan dy="4" font-size="10">2</tspan>
+			<tspan x="-136" y="17">F</tspan><tspan dy="4" font-size="10">1</tspan>
+		</text>
+	</g>
+</g>
+</svg>
