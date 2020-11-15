@@ -25,5 +25,10 @@ if __name__ == "__main__":
     plt.plot(x_values,third_order_polynomial(x_values),label='3rd order')
     ##This command adds a legend to the plot
     plt.legend()
+    
+    ##Set some generic plot labels
+    plt.xlabel('x')
+    plt.ylabel('f(x)')
+    
     ##Once created, open the plot
     plt.show()

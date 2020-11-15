@@ -49,8 +49,13 @@ linear_fit = linear_model.fit(observed, linear_params, x=x_range)
 
 fit_values = linear_fit.eval_components(x=x_range)
 
-print(linear_fit.params['line_slope'])
-print(linear_fit.params['line_intercept'])
+slope = linear_fit.params['line_slope']
+intercept = linear_fit.params['line_intercept']
+
+print(slope)
+print(slope.value,slope.stderr)
+
+
 
 plt.plot(x_range,fit_values['line_'],'-',label='Linear fit')
 plt.legend()
