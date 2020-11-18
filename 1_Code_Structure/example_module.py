@@ -16,8 +16,8 @@ class Spectra():
     '''A simple class to extrapolate and plot spectra for a basic astronomical radio source'''
     def __init__(self,SI,frequency,flux):
         '''Takes the spectral index, reference frequency, and refrence flux
-        of a generic radio spectra and initiales the Spectra class.
-        Caculate s0 as defined by the equation flux = S0*frequency**SI'''
+        of a generic radio spectra and initiates the Spectra class.
+        Calculate s0 as defined by the equation flux = S0*frequency**SI'''
         self.flux = flux
         self.SI = SI
         self.frequency = frequency
@@ -46,8 +46,8 @@ class Spectra_fancier():
     
     def __init__(self,SI=None,frequency=None,flux=None):
         '''Takes the spectral index, reference frequency, and refrence flux
-        of a generic radio spectra and initiales the Spectra class.
-        Caculate s0 as defined by the equation flux = S0*frequency**SI'''
+        of a generic radio spectra and initiates the Spectra class.
+        Calculate s0 as defined by the equation flux = S0*frequency**SI'''
         self._test_type(SI,'SI')
         self._test_type(frequency,'frequency')
         self._test_type(flux,'flux')
