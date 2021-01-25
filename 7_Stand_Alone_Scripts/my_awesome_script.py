@@ -105,7 +105,7 @@ def do_lmfit(lm_model, trim_wavelengths, trim_spectra, line_cent):
 
     return fit
 
-def do_fit_plot(wavelengths, spectra, trim_wavelengths, trim_spectra, fit):
+def do_fit_plot(rest_wavelengths, spectra, trim_wavelengths, trim_spectra, fit):
     """Plots the given input spectra (wavelengths, spectra) the subset of data
     that was used for fitting (trim_wavelenghts, trim_spectra), and the fit
     result out of lmfit (fit)"""
