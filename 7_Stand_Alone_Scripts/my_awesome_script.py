@@ -290,4 +290,4 @@ if __name__ == '__main__':
     if args.no_plots:
         pass
     else:
-        do_fit_plot(wavelengths, spectra, trim_wavelengths, trim_spectra, fit)
+        do_fit_plot(rest_wavelengths, spectra, trim_wavelengths, trim_spectra, fit)
