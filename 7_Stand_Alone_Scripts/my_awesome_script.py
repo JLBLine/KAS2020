@@ -53,8 +53,10 @@ def plot_spectra(wavelengths, spectra, smoothed=False):
         ax.axvline(emiss_line_dict[key],color="C{:d}".format(colour),linestyle='--',label=key)
 
     ax.legend()
-    ax.set_ylabel('$F_{\lambda}$ ($\mathrm{erg}\,\mathrm{s}^{-1} \mathrm{cm}^{-2}$ Å$^{-1}$)')
-    ax.set_xlabel('Wavelength (Å)')
+    ##u before the string means unicode - have to include this because we have the special
+    ##Angstrom character in there
+    ax.set_ylabel(u'$F_{\lambda}$ ($\mathrm{erg}\,\mathrm{s}^{-1} \mathrm{cm}^{-2}$ Å$^{-1}$)')
+    ax.set_xlabel(u'Wavelength (Å)')
 
     fig.savefig('input_spectra.png',bbox_inches='tight')
 
@@ -119,10 +121,10 @@ def do_fit_plot(rest_wavelengths, spectra, trim_wavelengths, trim_spectra, fit):
         ax.plot(trim_wavelengths, trim_spectra, 'k', label='Fitted spectra',lw=2.0)
         ax.plot(trim_wavelengths,fit.best_fit,lw=2.0, label='Fit result')
 
-        ax.set_xlabel('Rest wavelength (Å)')
+        ax.set_xlabel(u'Rest wavelength (Å)')
         ax.legend()
 
-    axs[0].set_ylabel('$F_{\lambda}$ ($\mathrm{erg}\,\mathrm{s}^{-1} \mathrm{cm}^{-2}$ Å$^{-1}$)')
+    axs[0].set_ylabel(u'$F_{\lambda}$ ($\mathrm{erg}\,\mathrm{s}^{-1} \mathrm{cm}^{-2}$ Å$^{-1}$)')
 
     fig.savefig('fit_results.png',bbox_inches='tight')
 
